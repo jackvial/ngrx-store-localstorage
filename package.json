@@ -1,67 +1,51 @@
 {
-  "name": "ngrx-store-localstorage",
-  "version": "0.1.5",
-  "description": "State and local storage syncing for @ngrx/store",
-  "main": "./dist/index.js",
-  "scripts": {
-    "build_dist": "rimraf dist && tsc",
-    "prepublish": "npm run typings && npm run build_dist",
-    "clean:test": "rimraf tmp",
-    "clean:dist": "rimraf dist",
-    "lint": "tslint src/**.ts",
-    "build_tests": "tsc -p spec",
-    "exec_tests": "jasmine",
-    "test": "tsc -p spec && jasmine && npm run clean:test",
-    "typings": "typings install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/btroncone/ngrx-store-localstorage.git"
-  },
-  "keywords": [
-    "redux",
-    "ngrx",
-    "store",
-    "localstorage",
-    "rxjs"
-  ],
-  "author": "Brian Troncone",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/btroncone/ngrx-store-localstorage/issues"
-  },
-  "homepage": "https://github.com/btroncone/ngrx-store-localstorage#readme",
-  "peerDependencies": {
-    "@ngrx/core": "^1.0.0",
-    "rxjs": "^5.0.0-beta.6",
-    "@angular/core": "^2.0.0-rc.5",
-    "@ngrx/store": "^2.0.0"
-  },
-  "devDependencies": {
-    "@angular/common": "^2.0.0-rc.5",
-    "@angular/compiler": "^2.0.0-rc.5",
-    "@angular/compiler-cli": "^0.5.0",
-    "@angular/core": "^2.0.0-rc.5",
-    "@angular/platform-browser": "^2.0.0-rc.5",
-    "@angular/platform-server": "^2.0.0-rc.5",
-    "@angular/tsc-wrapped": "^0.2.2",
-    "@ngrx/core": "^1.0.0",
-    "@types/crypto-js": "^3.1.33",
-    "@types/jasmine": "^2.2.31",
-    "@types/node": "^6.0.33",
-    "core-js": "^2.4.1",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.35.0",
-    "jasmine": "^2.4.1",
-    "jasmine-core": "^2.4.1",
-    "lodash": "^3.10.1",
-    "reflect-metadata": "0.1.2",
-    "rimraf": "^2.5.2",
-    "rxjs": "5.0.0-beta.6",
-    "tslint": "^3.4.0",
-    "typescript": "next",
-    "typings": "^0.8.1",
-    "zone.js": "^0.6.12"
-  },
-  "typings": "./dist/index.d.ts"
+    "name": "ngrx-store-localstorage",
+    "version": "0.2.5",
+    "description": "State and local storage syncing for @ngrx/store",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build_dist": "rimraf dist && tsc",
+        "prepublish": "npm run typings && npm run build_dist",
+        "clean:test": "rimraf tmp",
+        "clean:dist": "rimraf dist",
+        "lint": "tslint src/**.ts",
+        "build_tests": "tsc -p spec",
+        "exec_tests": "jasmine",
+        "test": "tsc -p spec && jasmine && npm run clean:test",
+        "typings": "typings install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/btroncone/ngrx-store-localstorage.git"
+    },
+    "keywords": [
+        "redux",
+        "ngrx",
+        "store",
+        "localstorage",
+        "rxjs"
+    ],
+    "author": "Brian Troncone",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/btroncone/ngrx-store-localstorage/issues"
+    },
+    "homepage": "https://github.com/btroncone/ngrx-store-localstorage#readme",
+    "peerDependencies": {
+        "@ngrx/core": "^1.2.0",
+        "rxjs": "^5.1.1",
+        "@angular/core": "^4.0.0",
+        "@ngrx/store": "^2.0.0"
+    },
+    "devDependencies": {
+        "crypto-js": "^3.1.9-1",
+        "rimraf": "^2.6.1",
+        "typescript": "2.2.2",
+        "@ngrx/core": "^1.2.0",
+        "rxjs": "^5.1.1",
+        "@angular/core": "^4.0.0",
+        "@ngrx/store": "^2.0.0",
+        "zone.js": "^0.8.5"
+    },
+    "typings": "./dist/index.d.ts"
 }

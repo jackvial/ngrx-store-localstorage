@@ -1,6 +1,6 @@
 declare var beforeEachProviders, it, describe, expect, inject;
-require('es6-shim');
-require('reflect-metadata');
+// require('es6-shim');
+// require('reflect-metadata');
 import { syncStateUpdate, rehydrateApplicationState, dateReviver } from '../src/index';
 import *  as CryptoJS from 'crypto-js';
 
